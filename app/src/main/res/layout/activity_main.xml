@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.droid.joshxjin.chainreactiondots.splashBackGround
+        android:id="@+id/splashPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:src="@android:drawable/ic_menu_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/settingsBtn" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:text="Game Modes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gameModesText"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+                android:fontFamily="casual" />
+
+            <Button
+                android:text="Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/normalGameBtn" />
+
+            <Button
+                android:text="Survival"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/survivalGameBtn" />
+        </LinearLayout>
+
+        <TextView
+            android:text="Chain Reaction: Dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:id="@+id/gameTitle"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1"
+            android:fontFamily="casual" />
+
+    </RelativeLayout>
+</FrameLayout>

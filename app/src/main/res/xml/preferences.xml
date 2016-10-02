@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Normal Game">
+
+        <com.droid.joshxjin.chainreactiondots.ListPreferenceWithValue
+            android:defaultValue="30"
+            android:title="Number of dots"
+            android:entries="@array/normal_dots_num"
+            android:entryValues="@array/normal_dots_num_values"
+            android:key="normalDotNum"
+            android:summary="Set the number of dots on screen" />
+
+        <com.droid.joshxjin.chainreactiondots.ListPreferenceWithValue
+            android:defaultValue="40%"
+            android:title="Normal Game Difficulty"
+            android:entries="@array/normal_diffculty"
+            android:entryValues="@array/normal_difficulty_values"
+            android:key="normalDifficulty"
+            android:summary="Set the number of target dot for win condition." />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Survival Game">
+
+        <com.droid.joshxjin.chainreactiondots.ListPreferenceWithValue
+            android:defaultValue="40%"
+            android:title="Survival Game Difficulty"
+            android:entries="@array/survival_diffculty"
+            android:entryValues="@array/survival_diffculty_values"
+            android:key="survivalDifficulty"
+            android:summary="Set number minimal number of target dot for win condition." />
+    </PreferenceCategory>
+
+</PreferenceScreen>
